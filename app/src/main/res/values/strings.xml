@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Pekatala</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="label_ikan">Ikan Pemakan Rumput Laut</string>
+    <string name="deskripsi_ikan">Thalus terlihat bekas gigitan ikan, thalus rusak, terkelupas hingga patah.</string>
+    
+    <string name="label_gulma">Gulma</string>
+    <string name="deskripsi_gulma">Menempel pada thalus, lapisan kortikal, kortikal rusak.</string>
+
+    <string name="label_iceice">Ice ice</string>
+    <string name="deskripsi_iceice">Warna thalus berubah menjadi pucat, sebagian atau seluruh thalus pada beberapa cabang menjadi putih atau membusuk, pertumbuhan lambat.</string>
+
+    <string name="sumber">Parenrengi dkk (2012)</string>
+
+    <!-- JAWABAN KUALITAS AIR -->
+    <string name="jawaban_salinitas_1">Kurang dari 28 ppt</string>
+    <string name="jawaban_salinitas_2">28 s/d 32 ppt</string>
+    <string name="jawaban_salinitas_3">32 s/d 34 ppt</string>
+
+    <string name="jawaban_kecerahan_1">Kurang dari 3 m</string>
+    <string name="jawaban_kecerahan_2">3 s/d 5 m</string>
+    <string name="jawaban_kecerahan_3">Lebih dari 5 m</string>
+
+    <string name="jawaban_suhu_1">Lebih dari 28ºC</string>
+    <string name="jawaban_suhu_2">20 s/d 24ºC</string>
+    <string name="jawaban_suhu_3">25 s/d 28ºC</string>
+
+    <string name="jawaban_kedalaman_1">Lebih dari 60 m</string>
+    <string name="jawaban_kedalaman_2">0 s/d 30 m</string>
+    <string name="jawaban_kedalaman_3">31 s/d 60 m</string>
+
+    <string name="jawaban_kecepatanarus_1">Kurang dari 20 atau Lebih dari 40 cm/s</string>
+    <string name="jawaban_kecepatanarus_2">30 s/d 40 cm/s</string>
+    <string name="jawaban_kecepatanarus_3">20 s/d 30 cm/s</string>
+
+    <string name="jawaban_substratdasarpantai_1">Berbatu</string>
+    <string name="jawaban_substratdasarpantai_2">Berlumpur</string>
+    <string name="jawaban_substratdasarpantai_3">Berpasir</string>
+
+    <string name="jawaban_keterjangkauan_1">Sukar</string>
+    <string name="jawaban_keterjangkauan_2">Sedang</string>
+    <string name="jawaban_keterjangkauan_3">Mudah</string>
+
+    <string name="jawaban_keterlindungan_1">Terbuka</string>
+    <string name="jawaban_keterlindungan_2">Agak terlindung</string>
+    <string name="jawaban_keterlindungan_3">Terlindung</string>
+
+    <string name="jawaban_pencemar_1">Tinggi</string>
+    <string name="jawaban_pencemar_2">Sedang</string>
+    <string name="jawaban_pencemar_3">Tidak ada</string>
+    
+    <!-- SARAN BULAN -->
+    <string name="masalah_mei_juni">Musim Ice-ice</string>
+    <string name="saran_mei_juni">Pilih bibit tahan penyakit ataupun istirahat tanam.</string>
+
+    <string name="masalah_januari_februari">Musim Hujan (angin dan ombak besar)</string>
+    <string name="saran_januari_februari">Tanaman dipindahkan ke tempat teduh, batasi jumlah bentangan.</string>
+
+    <string name="masalah_juli_agustus_september">Musim Kemarau</string>
+    <string name="saran_juli_agustus_september">Kedalaman bentangan diturunkan, posisi tanaman minimal 50 cm dari permukaan air.</string>
+
+    <string name="masalah_agustus_september">Musim Gulma (lumut)</string>
+    <string name="saran_agustus_september">Bersihkan gulma dan goyang bentangan tanaman, pindahkan ke lokasi berarus.</string>
+
+    <string name="masalah_maret_april_mei">Pertumbuhan Kerdil</string>
+    <string name="saran_maret_april_mei">Ganti bibit berbeda, bentangan dijarangkan.</string>
+
+    <!-- SARAN KUALITAS AIR -->
+    <string name="saran_salinitas_1">Jangan menanam dekat muara karena salinitasnya turun jika terkena air sungai dan saat awal musim penghujan.</string>
+    <string name="saran_salinitas_2">Budidaya rumput laut lebih baik pada salinitas mendekati salinitas laut.</string>
+    
+    <string name="saran_kecerahan_1">Pindah lokasi tanam yang memiliki kecerahan di atas 3 m atau hindari substrat dasar yang berlumpur.</string>
+    <string name="saran_kecerahan_2">Perhatikan substrat dasar karena mampu menurunkan kecerahan.</string>
+
+    <string name="saran_suhu_1">Turunkan rumput laut sampai kedalaman .... cm (maksimal 60 cm) namun masih dapat ditembus sinar matahari.</string>
+    <string name="saran_suhu_2">Waspada saat puncak musim panas atau penghujan karena akan menyebabkan suhu lebih tinggi ataupun lebih rendah.</string>
+
+    <string name="saran_kedalaman_1">Penanaman rumput laut dinaikkan sampai/lebih dari ... cm.</string>
+    <string name="saran_kedalaman_2">Jangan sampai rumput laut tidak terkena air saat surut terendah atau cari tempat yang sedikit lebih dalam.</string>
+
+    <string name="saran_kecepatanarus_1">Memilih lokasi yang ada pertumbuhan karang lunak dan lamun yang bersih dari kotoran yang cenderung miring pada satu arah.</string>
+    <string name="saran_kecepatanarus_2">Memberi penahan arus.</string>
+
+    <string name="saran_substratdasarpantai_1">Sering membersihkan rumput laut dari partikel lumpur atau menghindari perairan yang berlumpur.</string>
+    <string name="saran_substratdasarpantai_2">Perlu diperhatikan kebersihan dari rumput laut.</string>
+
+    <string name="saran_hamapenyakit_000">Optimalkan jumlah bentangan.</string>
+    <string name="saran_hamapenyakit_001">Pantau secara rutin, bersihkan gulma.</string>
+    <string name="saran_hamapenyakit_011">Intensifkan pemantauan, pindah ke lokasi berarus, tanam jenis bibit tahan penyakit.</string>
+    <string name="saran_hamapenyakit_111">Istirahat tanam.</string>
+</resources>
