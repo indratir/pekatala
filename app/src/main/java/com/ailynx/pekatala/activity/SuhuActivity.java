@@ -70,9 +70,8 @@ public class SuhuActivity extends AppCompatActivity {
                     Snackbar.make(activity_suhu, "Pilih suhu.", Snackbar.LENGTH_SHORT).show();
                 } else {
                     UserData.transaksi.setSuhu(suhu);
-                    Intent intent = new Intent(SuhuActivity.this, KedalamanActivity.class);
+                    Intent intent = new Intent(SuhuActivity.this, HamaPenyakitActivity.class);
                     startActivity(intent);
-
                 }
             }
         });

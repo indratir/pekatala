@@ -83,11 +83,7 @@ public class GetDataController {
                     transaksi.setKecerahan(jsonObject.getInt("kecerahan"));
                     transaksi.setSuhu(jsonObject.getInt("suhu"));
                     transaksi.setKedalaman(jsonObject.getInt("kedalaman"));
-                    transaksi.setKecepatan_arus(jsonObject.getInt("kecepatan_arus"));
                     transaksi.setSubstrat_dasar_pantai(jsonObject.getInt("substrat_dasar_pantai"));
-                    transaksi.setKeterlindungan(jsonObject.getInt("keterlindungan"));
-                    transaksi.setKeterjangkauan(jsonObject.getInt("keterjangkauan"));
-                    transaksi.setPencemar(jsonObject.getInt("pencemar"));
                     transaksi.setProvinsi(jsonObject.getInt("provinsi"));
                     transaksi.setKota_kabupaten(jsonObject.getInt("kota_kabupaten"));
                     transaksi.setBulan(jsonObject.getInt("bulan"));

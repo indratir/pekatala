@@ -50,25 +50,9 @@
     <string name="jawaban_kedalaman_2">0 s/d 30 m</string>
     <string name="jawaban_kedalaman_3">31 s/d 60 m</string>
 
-    <string name="jawaban_kecepatanarus_1">Kurang dari 20 atau Lebih dari 40 cm/s</string>
-    <string name="jawaban_kecepatanarus_2">30 s/d 40 cm/s</string>
-    <string name="jawaban_kecepatanarus_3">20 s/d 30 cm/s</string>
-
     <string name="jawaban_substratdasarpantai_1">Berbatu</string>
     <string name="jawaban_substratdasarpantai_2">Berlumpur</string>
     <string name="jawaban_substratdasarpantai_3">Berpasir</string>
-
-    <string name="jawaban_keterjangkauan_1">Sukar</string>
-    <string name="jawaban_keterjangkauan_2">Sedang</string>
-    <string name="jawaban_keterjangkauan_3">Mudah</string>
-
-    <string name="jawaban_keterlindungan_1">Terbuka</string>
-    <string name="jawaban_keterlindungan_2">Agak terlindung</string>
-    <string name="jawaban_keterlindungan_3">Terlindung</string>
-
-    <string name="jawaban_pencemar_1">Tinggi</string>
-    <string name="jawaban_pencemar_2">Sedang</string>
-    <string name="jawaban_pencemar_3">Tidak ada</string>
     
     <!-- SARAN BULAN -->
     <string name="masalah_mei_juni">Musim Ice-ice</string>
@@ -86,6 +70,12 @@
     <string name="masalah_maret_april_mei">Pertumbuhan Kerdil</string>
     <string name="saran_maret_april_mei">Ganti bibit berbeda, bentangan dijarangkan.</string>
 
+    <!-- SARAN WAKTU -->
+    <string name="saran_pagi">Baik karena intensitas cahaya matahari cukup baik dan tidak berlebihan.</string>
+    <string name="saran_siang">Cukup karena cahaya matahari masih ada namun intensitasnya berlebihan dan menyengat sehingga suhu air tidak baik untuk penanaman rumput laut.</string>
+    <string name="saran_sore">Kurang baik karena intensitas cahaya matahari kurang memadai untuk penanaman rumput laut.</string>
+    <string name="saran_malam">Tidak baik karena tidak ada sumber cahaya matahari untuk penanaman rumput laut.</string>
+
     <!-- SARAN KUALITAS AIR -->
     <string name="saran_salinitas_1">Jangan menanam dekat muara karena salinitasnya turun jika terkena air sungai dan saat awal musim penghujan.</string>
     <string name="saran_salinitas_2">Budidaya rumput laut lebih baik pada salinitas mendekati salinitas laut.</string>
@@ -98,9 +88,6 @@
 
     <string name="saran_kedalaman_1">Penanaman rumput laut dinaikkan sampai/lebih dari ... cm.</string>
     <string name="saran_kedalaman_2">Jangan sampai rumput laut tidak terkena air saat surut terendah atau cari tempat yang sedikit lebih dalam.</string>
-
-    <string name="saran_kecepatanarus_1">Memilih lokasi yang ada pertumbuhan karang lunak dan lamun yang bersih dari kotoran yang cenderung miring pada satu arah.</string>
-    <string name="saran_kecepatanarus_2">Memberi penahan arus.</string>
 
     <string name="saran_substratdasarpantai_1">Sering membersihkan rumput laut dari partikel lumpur atau menghindari perairan yang berlumpur.</string>
     <string name="saran_substratdasarpantai_2">Perlu diperhatikan kebersihan dari rumput laut.</string>

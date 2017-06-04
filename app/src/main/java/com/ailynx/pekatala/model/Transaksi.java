@@ -26,11 +26,7 @@ public class Transaksi extends SugarRecord {
     int kecerahan;
     int suhu;
     int kedalaman;
-    int kecepatan_arus;
     int substrat_dasar_pantai;
-    int keterlindungan;
-    int keterjangkauan;
-    int pencemar;
 
     public Transaksi() {
     }
@@ -46,11 +42,7 @@ public class Transaksi extends SugarRecord {
                      int kecerahan,
                      int suhu,
                      int kedalaman,
-                     int kecepatan_arus,
-                     int substrat_dasar_pantai,
-                     int keterlindungan,
-                     int keterjangkauan,
-                     int pencemar) {
+                     int substrat_dasar_pantai) {
 
         this.pernah_tanam = pernah_tanam;
         this.hama_ikan = hama_ikan;
@@ -64,11 +56,31 @@ public class Transaksi extends SugarRecord {
         this.kecerahan = kecerahan;
         this.suhu = suhu;
         this.kedalaman = kedalaman;
-        this.kecepatan_arus = kecepatan_arus;
         this.substrat_dasar_pantai = substrat_dasar_pantai;
-        this.keterlindungan = keterlindungan;
-        this.keterjangkauan = keterjangkauan;
-        this.pencemar = pencemar;
+    }
+
+    public int getLogoId() {
+        double hasil = 0;
+        if (pernah_tanam == 1) {
+            hasil = salinitas + kecerahan + suhu;
+            hasil = hasil / 3;
+        } else {
+            hasil = salinitas + kecerahan + suhu +
+                    kedalaman + substrat_dasar_pantai;
+            hasil = hasil / 5;
+        }
+
+        Log.e("Transaksi", "Hasil : "+hasil);
+
+        if (hasil >= 2.3) {
+            return R.drawable.logo_baik;
+        } else if (hasil >= 1.7 && hasil <= 2.2) {
+            return R.drawable.logo_cukup;
+        } else if (hasil <= 1.6) {
+            return R.drawable.logo_buruk;
+        } else {
+            return 0;
+        }
     }
 
     public String getTitle() {
@@ -84,20 +96,16 @@ public class Transaksi extends SugarRecord {
     }
 
     public String getInfo() {
-        double hasil = salinitas + kecerahan + suhu +
-                kedalaman + kecepatan_arus + substrat_dasar_pantai +
-                keterlindungan + keterjangkauan + pencemar;
-        hasil = hasil / 9;
+        double hasil = 0;
+        if (pernah_tanam == 1) {
+            hasil = salinitas + kecerahan + suhu;
+            hasil = hasil / 3;
+        } else {
+            hasil = salinitas + kecerahan + suhu +
+                    kedalaman + substrat_dasar_pantai;
+            hasil = hasil / 5;
+        }
 
-        /*Log.e("Transaksi", "Salinitas : "+salinitas);
-        Log.e("Transaksi", "Kecerahan : "+kecerahan);
-        Log.e("Transaksi", "Suhu : "+suhu);
-        Log.e("Transaksi", "Kedalaman : "+kedalaman);
-        Log.e("Transaksi", "Kecepatan Arus : "+kecepatan_arus);
-        Log.e("Transaksi", "Substrat Dasar Pantai : "+substrat_dasar_pantai);
-        Log.e("Transaksi", "Keterlindungan : "+keterlindungan);
-        Log.e("Transaksi", "Keterjangkauan : "+keterjangkauan);
-        Log.e("Transaksi", "Pencemar : "+pencemar);*/
         Log.e("Transaksi", "Hasil : "+hasil);
 
         String result = "";
@@ -114,6 +122,7 @@ public class Transaksi extends SugarRecord {
 
     public String getSaran(Context context) {
         String result = "Waktu tanam :\n";
+
         if (bulan == 1 || bulan == 2){
             result += context.getString(R.string.saran_januari_februari) + "\n";
         }
@@ -128,6 +137,16 @@ public class Transaksi extends SugarRecord {
         }
         if (bulan == 8 || bulan == 9) {
             result += context.getString(R.string.saran_agustus_september) + "\n";
+        }
+
+        if (waktu == 1) {
+            result += context.getString(R.string.saran_pagi) + "\n";
+        } else if (waktu == 2) {
+            result += context.getString(R.string.saran_siang) + "\n";
+        } else if (waktu == 3) {
+            result += context.getString(R.string.saran_sore) + "\n";
+        } else if (waktu == 2) {
+            result += context.getString(R.string.saran_malam) + "\n";
         }
 
         result += "\nKualitas Air :\n";
@@ -171,17 +190,6 @@ public class Transaksi extends SugarRecord {
                 break;
             case 2:
                 result += "- " + context.getString(R.string.saran_kedalaman_2) + "\n";
-                break;
-            default:
-                break;
-        }
-
-        switch (kecepatan_arus) {
-            case 1:
-                result += "- " + context.getString(R.string.saran_kecepatanarus_1) + "\n";
-                break;
-            case 2:
-                result += "- " + context.getString(R.string.saran_kecepatanarus_2) + "\n";
                 break;
             default:
                 break;
@@ -266,24 +274,8 @@ public class Transaksi extends SugarRecord {
         this.kedalaman = kedalaman;
     }
 
-    public void setKecepatan_arus(int kecepatan_arus) {
-        this.kecepatan_arus = kecepatan_arus;
-    }
-
     public void setSubstrat_dasar_pantai(int substrat_dasar_pantai) {
         this.substrat_dasar_pantai = substrat_dasar_pantai;
-    }
-
-    public void setKeterlindungan(int keterlindungan) {
-        this.keterlindungan = keterlindungan;
-    }
-
-    public void setKeterjangkauan(int keterjangkauan) {
-        this.keterjangkauan = keterjangkauan;
-    }
-
-    public void setPencemar(int pencemar) {
-        this.pencemar = pencemar;
     }
 
     public int getPernah_tanam() {
@@ -334,23 +326,7 @@ public class Transaksi extends SugarRecord {
         return kedalaman;
     }
 
-    public int getKecepatan_arus() {
-        return kecepatan_arus;
-    }
-
     public int getSubstrat_dasar_pantai() {
         return substrat_dasar_pantai;
-    }
-
-    public int getKeterlindungan() {
-        return keterlindungan;
-    }
-
-    public int getKeterjangkauan() {
-        return keterjangkauan;
-    }
-
-    public int getPencemar() {
-        return pencemar;
     }
 }

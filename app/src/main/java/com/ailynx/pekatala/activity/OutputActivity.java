@@ -8,23 +8,27 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ailynx.pekatala.R;
 import com.ailynx.pekatala.data.UserData;
 
 public class OutputActivity extends AppCompatActivity {
-    TextView text_saran, 
+    ImageView iv_hasil;
+    TextView text_saran,
             text_hasil,
             tv_jawaban_salinitas,
             tv_jawaban_kecerahan,
             tv_jawaban_suhu,
             tv_jawaban_kedalaman,
-            tv_jawaban_kecepatanarus,
-            tv_jawaban_substratdasarpantai,
-            tv_jawaban_keterjangkauan,
-            tv_jawaban_keterlindungan,
-            tv_jawaban_pencemar;
+            tv_jawaban_substratdasarpantai;
+    LinearLayout ll_jawaban_salinitas,
+            ll_jawaban_kecerahan,
+            ll_jawaban_suhu,
+            ll_jawaban_kedalaman,
+            ll_jawaban_substratdasarpantai;
     Button btn_output;
 
     @Override
@@ -37,17 +41,19 @@ public class OutputActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        iv_hasil = (ImageView) findViewById(R.id.iv_hasil);
         text_hasil = (TextView) findViewById(R.id.text_hasil);
         text_saran = (TextView) findViewById(R.id.text_saran);
         tv_jawaban_salinitas = (TextView) findViewById(R.id.tv_jawaban_salinitas);
         tv_jawaban_kecerahan = (TextView) findViewById(R.id.tv_jawaban_kecerahan);
         tv_jawaban_suhu = (TextView) findViewById(R.id.tv_jawaban_suhu);
         tv_jawaban_kedalaman = (TextView) findViewById(R.id.tv_jawaban_kedalaman);
-        tv_jawaban_kecepatanarus = (TextView) findViewById(R.id.tv_jawaban_kecepatanarus);
         tv_jawaban_substratdasarpantai = (TextView) findViewById(R.id.tv_jawaban_substratdasarpantai);
-        tv_jawaban_keterjangkauan = (TextView) findViewById(R.id.tv_jawaban_keterjangkauan);
-        tv_jawaban_keterlindungan = (TextView) findViewById(R.id.tv_jawaban_keterlindungan);
-        tv_jawaban_pencemar = (TextView) findViewById(R.id.tv_jawaban_pencemar);
+        ll_jawaban_salinitas = (LinearLayout) findViewById(R.id.ll_jawaban_salinitas);
+        ll_jawaban_kecerahan = (LinearLayout) findViewById(R.id.ll_jawaban_kecerahan);
+        ll_jawaban_suhu = (LinearLayout) findViewById(R.id.ll_jawaban_suhu);
+        ll_jawaban_kedalaman = (LinearLayout) findViewById(R.id.ll_jawaban_kedalaman);
+        ll_jawaban_substratdasarpantai = (LinearLayout) findViewById(R.id.ll_jawaban_substratdasarpantai);
         btn_output = (Button) findViewById(R.id.btn_output);
 
         btn_output.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +62,8 @@ public class OutputActivity extends AppCompatActivity {
                 backToHome();
             }
         });
-        
+
+        iv_hasil.setImageResource(UserData.transaksi.getLogoId());
         text_hasil.setText(UserData.transaksi.getInfo());
         text_saran.setText(UserData.transaksi.getSaran(this));
         
@@ -102,88 +109,40 @@ public class OutputActivity extends AppCompatActivity {
                 break;
         }
 
-        switch (UserData.transaksi.getKedalaman()) {
-            case 1:
-                tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_1));
-                break;
-            case 2:
-                tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_2));
-                break;
-            case 3:
-                tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_3));
-                break;
-            default:
-                break;
-        }
+        if (UserData.transaksi.getPernah_tanam() == 0){
+            ll_jawaban_kedalaman.setVisibility(View.VISIBLE);
+            ll_jawaban_substratdasarpantai.setVisibility(View.VISIBLE);
 
-        switch (UserData.transaksi.getKecepatan_arus()) {
-            case 1:
-                tv_jawaban_kecepatanarus.setText(getString(R.string.jawaban_kecepatanarus_1));
-                break;
-            case 2:
-                tv_jawaban_kecepatanarus.setText(getString(R.string.jawaban_kecepatanarus_2));
-                break;
-            case 3:
-                tv_jawaban_kecepatanarus.setText(getString(R.string.jawaban_kecepatanarus_3));
-                break;
-            default:
-                break;
-        }
+            switch (UserData.transaksi.getKedalaman()) {
+                case 1:
+                    tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_1));
+                    break;
+                case 2:
+                    tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_2));
+                    break;
+                case 3:
+                    tv_jawaban_kedalaman.setText(getString(R.string.jawaban_kedalaman_3));
+                    break;
+                default:
+                    break;
+            }
 
-        switch (UserData.transaksi.getSubstrat_dasar_pantai()) {
-            case 1:
-                tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_1));
-                break;
-            case 2:
-                tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_2));
-                break;
-            case 3:
-                tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_3));
-                break;
-            default:
-                break;
-        }
-
-        switch (UserData.transaksi.getKeterjangkauan()) {
-            case 1:
-                tv_jawaban_keterjangkauan.setText(getString(R.string.jawaban_keterjangkauan_1));
-                break;
-            case 2:
-                tv_jawaban_keterjangkauan.setText(getString(R.string.jawaban_keterjangkauan_2));
-                break;
-            case 3:
-                tv_jawaban_keterjangkauan.setText(getString(R.string.jawaban_keterjangkauan_3));
-                break;
-            default:
-                break;
-        }
-
-        switch (UserData.transaksi.getKeterlindungan()) {
-            case 1:
-                tv_jawaban_keterlindungan.setText(getString(R.string.jawaban_keterlindungan_1));
-                break;
-            case 2:
-                tv_jawaban_keterlindungan.setText(getString(R.string.jawaban_keterlindungan_2));
-                break;
-            case 3:
-                tv_jawaban_keterlindungan.setText(getString(R.string.jawaban_keterlindungan_3));
-                break;
-            default:
-                break;
-        }
-
-        switch (UserData.transaksi.getPencemar()) {
-            case 1:
-                tv_jawaban_pencemar.setText(getString(R.string.jawaban_pencemar_1));
-                break;
-            case 2:
-                tv_jawaban_pencemar.setText(getString(R.string.jawaban_pencemar_2));
-                break;
-            case 3:
-                tv_jawaban_pencemar.setText(getString(R.string.jawaban_pencemar_3));
-                break;
-            default:
-                break;
+            switch (UserData.transaksi.getSubstrat_dasar_pantai()) {
+                case 1:
+                    tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_1));
+                    break;
+                case 2:
+                    tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_2));
+                    break;
+                case 3:
+                    tv_jawaban_substratdasarpantai.setText(getString(R.string.jawaban_substratdasarpantai_3));
+                    break;
+                default:
+                    break;
+            }
+        } else {
+            ll_jawaban_kedalaman.setVisibility(View.GONE);
+            ll_jawaban_substratdasarpantai.setVisibility(View.GONE);
         }
     }
 

@@ -56,11 +56,7 @@ public class PostDataController {
                 .add("kecerahan", ""+UserData.transaksi.getKecerahan())
                 .add("suhu", ""+UserData.transaksi.getSuhu())
                 .add("kedalaman", ""+UserData.transaksi.getKedalaman())
-                .add("kecepatan_arus", ""+UserData.transaksi.getKecepatan_arus())
                 .add("substrat_dasar_pantai", ""+UserData.transaksi.getSubstrat_dasar_pantai())
-                .add("keterlindungan", ""+UserData.transaksi.getKeterlindungan())
-                .add("keterjangkauan", ""+UserData.transaksi.getKeterjangkauan())
-                .add("pencemar", ""+UserData.transaksi.getPencemar())
                 .add("provinsi", ""+UserData.transaksi.getProvinsi())
                 .add("kota_kabupaten", ""+UserData.transaksi.getKota_kabupaten())
                 .add("bulan", ""+UserData.transaksi.getBulan())
@@ -77,6 +73,7 @@ public class PostDataController {
             return result;
         }
         public String verifyJson(String data){
+            Log.e("Post-Pekatala", data);
             JSONObject temp;
             String resultTemp;
             try {

@@ -27,16 +27,8 @@ public class KualitasAirDialog extends AppCompatActivity {
             title_kualitas_air.setText("Suhu");
         } else if (id == R.id.info_kedalaman){
             title_kualitas_air.setText("Kedalaman");
-        } else if (id == R.id.info_kecepatanarus){
-            title_kualitas_air.setText("Kecepatan arus");
         } else if (id == R.id.info_substratdasarpantai){
             title_kualitas_air.setText("Substrat dasar pantai");
-        } else if (id == R.id.info_keterlindungan){
-            title_kualitas_air.setText("Keterlindungan");
-        } else if (id == R.id.info_keterjangkauan){
-            title_kualitas_air.setText("Keterjangkauan");
-        } else if (id == R.id.info_pencemar){
-            title_kualitas_air.setText("Pencemar");
         }
     }
 }

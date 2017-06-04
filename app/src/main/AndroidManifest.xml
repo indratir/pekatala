@@ -42,15 +42,6 @@
             android:name=".dialog.HamaPenyakitDialog"
             android:theme="@style/AppTheme.Dialog" />
         <activity
-            android:name=".activity.Part1Activity"
-            />
-        <activity
-            android:name=".activity.Part2Activity"
-            />
-        <activity
-            android:name=".activity.Part3Activity"
-            />
-        <activity
             android:name=".activity.OutputActivity"
             />
         <activity
@@ -59,12 +50,6 @@
         <activity
             android:name=".dialog.TeamDialog"
             android:theme="@style/AppTheme.Dialog" />
-        <activity
-            android:name=".activity.WaktuTanamActivity"
-            />
-        <activity
-            android:name=".activity.KualitasAirActivity"
-            />
         <activity
             android:name=".activity.HamaPenyakitActivity"
             />
@@ -75,11 +60,7 @@
         <activity android:name=".activity.KecerahanActivity" />
         <activity android:name=".activity.SuhuActivity" />
         <activity android:name=".activity.KedalamanActivity" />
-        <activity android:name=".activity.KecepatanArusActivity" />
         <activity android:name=".activity.SubstratDasarPantaiActivity" />
-        <activity android:name=".activity.KeterjangkauanActivity" />
-        <activity android:name=".activity.KeterlindunganActivity" />
-        <activity android:name=".activity.PencemarActivity"></activity>
     </application>
 
 </manifest>

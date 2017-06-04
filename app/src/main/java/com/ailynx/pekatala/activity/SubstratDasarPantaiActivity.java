@@ -71,7 +71,7 @@ public class SubstratDasarPantaiActivity extends AppCompatActivity {
                     Snackbar.make(activity_substrat_dasar_pantai, "Pilih substrat dasar pantai.", Snackbar.LENGTH_SHORT).show();
                 } else {
                     UserData.transaksi.setSubstrat_dasar_pantai(substratdasarpantai);
-                    Intent intent = new Intent(SubstratDasarPantaiActivity.this, KeterjangkauanActivity.class);
+                    Intent intent = new Intent(SubstratDasarPantaiActivity.this, SalinitasActivity.class);
                     startActivity(intent);
                 }
             }

@@ -70,7 +70,7 @@ public class KedalamanActivity extends AppCompatActivity {
                     Snackbar.make(activity_kedalaman, "Pilih kedalaman.", Snackbar.LENGTH_SHORT).show();
                 } else {
                     UserData.transaksi.setKedalaman(kedalaman);
-                    Intent intent = new Intent(KedalamanActivity.this, KecepatanArusActivity.class);
+                    Intent intent = new Intent(KedalamanActivity.this, SubstratDasarPantaiActivity.class);
                     startActivity(intent);
                 }
             }

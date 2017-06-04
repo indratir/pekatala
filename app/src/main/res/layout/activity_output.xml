@@ -31,12 +31,27 @@
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp"
                 />
+            <ImageView
+                android:id="@+id/iv_hasil"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/logo_baik"
+                />
             <TextView
                 android:id="@+id/text_hasil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Baik."
-                android:textSize="32sp"
+                android:text="Baik"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menurut Prengrengi dkk. (2012)"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
                 />
@@ -66,6 +81,7 @@
                 android:layout_marginBottom="8dp"
                 />
             <LinearLayout
+                android:id="@+id/ll_jawaban_salinitas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -87,6 +103,7 @@
                     />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/ll_jawaban_kecerahan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -108,6 +125,7 @@
                     />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/ll_jawaban_suhu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -129,6 +147,7 @@
                     />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/ll_jawaban_kedalaman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -150,27 +169,7 @@
                     />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/box_border_bottom"
-                android:padding="16dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kecepatan Arus"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    />
-                <TextView
-                    android:id="@+id/tv_jawaban_kecepatanarus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="null"
-                    />
-            </LinearLayout>
-            <LinearLayout
+                android:id="@+id/ll_jawaban_substratdasarpantai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -186,70 +185,6 @@
                     />
                 <TextView
                     android:id="@+id/tv_jawaban_substratdasarpantai"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="null"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/box_border_bottom"
-                android:padding="16dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Keterjangkauan"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    />
-                <TextView
-                    android:id="@+id/tv_jawaban_keterjangkauan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="null"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/box_border_bottom"
-                android:padding="16dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Keterlindungan"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    />
-                <TextView
-                    android:id="@+id/tv_jawaban_keterlindungan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="null"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/box_border_bottom"
-                android:padding="16dp"
-                android:layout_marginBottom="8dp"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pencemar"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    />
-                <TextView
-                    android:id="@+id/tv_jawaban_pencemar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="null"

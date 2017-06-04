@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton radio_tanam_pernah, radio_tanam_tdkpernah;
     Spinner spinner_kota_kabupaten, spinner_provinsi, spinner_bulan, spinner_waktu;
     FloatingActionButton fab_main;
-    Integer provinsi_fix, kota_kabupaten_fix, bulan_fix, waktu_fix;
+    Integer provinsi_fix, kota_kabupaten_fix, bulan_fix, waktu_fix, pernah_tanam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,17 +48,17 @@ public class MainActivity extends AppCompatActivity {
         spinner_waktu = (Spinner) findViewById(R.id.spinner_waktu);
         fab_main = (FloatingActionButton) findViewById(R.id.fab_main);
 
-        radio_tanam_pernah.setChecked(true);
         radio_tanam_pernah.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    UserData.transaksi.setPernah_tanam(1);
+                    pernah_tanam = 1;
                 } else {
-                    UserData.transaksi.setPernah_tanam(0);
+                    pernah_tanam = 0;
                 }
             }
         });
+        radio_tanam_pernah.setChecked(true);
 
         fab_main.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,8 +70,17 @@ public class MainActivity extends AppCompatActivity {
                     UserData.transaksi.setKota_kabupaten(kota_kabupaten_fix);
                     UserData.transaksi.setBulan(bulan_fix);
                     UserData.transaksi.setWaktu(waktu_fix);
-                    Intent intent = new Intent(MainActivity.this, SalinitasActivity.class);
-                    startActivity(intent);
+                    UserData.transaksi.setPernah_tanam(pernah_tanam);
+
+                    if (pernah_tanam == 1) {
+                        UserData.transaksi.setKedalaman(0);
+                        UserData.transaksi.setSubstrat_dasar_pantai(0);
+                        Intent intent = new Intent(MainActivity.this, SalinitasActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, KedalamanActivity.class);
+                        startActivity(intent);
+                    }
                 }
             }
         });

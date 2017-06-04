@@ -24,7 +24,7 @@ public class UserData {
             "Jawa Barat"
     };
     public static String[][] kota_kabupaten = {
-            {"Surabaya", "Pasuruan", "Banyuwangi"},
+            {"Surabaya", "Pasuruan", "Banyuwangi", "Sumenep"},
             {"Yogyakarta", "Jepara", "Semarang"},
             {"Bandung", "Bogor", "Cirebon"}
     };
