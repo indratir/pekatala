@@ -27,6 +27,12 @@
                 android:orientation="vertical"
                 android:layout_marginBottom="16dp"
                 >
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/logo_tempat"
+                    android:layout_gravity="center_horizontal"
+                    />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -35,6 +41,7 @@
                     android:layout_marginBottom="8dp"
                     android:textColor="@android:color/primary_text_light"
                     android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
                     />
                 <Spinner
                     android:id="@+id/spinner_provinsi"
@@ -57,9 +64,16 @@
                 android:orientation="vertical"
                 android:layout_marginBottom="16dp"
                 >
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/logo_time"
+                    android:layout_gravity="center_horizontal"
+                    />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="Waktu tanam"
                     android:textSize="18sp"
                     android:layout_marginBottom="8dp"
@@ -124,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         app:fabSize="normal"
-        android:src="@drawable/ic_done"
+        android:src="@drawable/logo_tombol"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         />
