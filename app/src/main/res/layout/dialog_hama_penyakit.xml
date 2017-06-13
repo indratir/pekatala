@@ -4,13 +4,14 @@
     android:id="@+id/dialog_hama_penyakit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ailynx.pekatala.dialog.HamaPenyakitDialog"
     android:background="@drawable/box"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.ailynx.pekatala.dialog.HamaPenyakitDialog">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,27 +20,27 @@
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin">
+
             <TextView
                 android:id="@+id/title_hama_penyakit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Title"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
                 android:layout_marginBottom="16dp"
-                />
+                android:text="Title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
             <ImageView
                 android:id="@+id/img_hama_penyakit"
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:background="@android:color/background_dark"
-                android:layout_marginBottom="16dp"/>
+                android:layout_width="128dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
             <TextView
                 android:id="@+id/text_hama_penyakit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
-                android:text="@string/lipsum"
-                />
+                android:text="@string/lipsum" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

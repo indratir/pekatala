@@ -25,15 +25,19 @@ public class HamaPenyakitDialog extends AppCompatActivity {
         if (id == R.id.info_hama_ikan){
             title_hama_penyakit.setText(R.string.label_ikan);
             text_hama_penyakit.setText(R.string.deskripsi_ikan);
+            img_hama_penyakit.setImageResource(R.drawable.hama_ikan);
         } else if (id == R.id.info_hama_gulma){
             title_hama_penyakit.setText(R.string.label_gulma);
             text_hama_penyakit.setText(R.string.deskripsi_gulma);
+            img_hama_penyakit.setImageResource(R.drawable.not_found);
         } else if (id == R.id.info_penyakit_iceice){
             title_hama_penyakit.setText(R.string.label_iceice);
             text_hama_penyakit.setText(R.string.deskripsi_iceice);
+            img_hama_penyakit.setImageResource(R.drawable.penyakit_iceice);
         } else {
             title_hama_penyakit.setText("Unknown");
             text_hama_penyakit.setText(R.string.lipsum);
+            img_hama_penyakit.setImageResource(R.drawable.not_found);
         }
     }
 }

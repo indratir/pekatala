@@ -12,10 +12,13 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:orientation="vertical"
+            android:paddingBottom="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,17 +37,17 @@
                         android:layout_centerVertical="true"
                         android:layout_marginRight="8dp"
                         android:text="Pilih Jawaban"
-                        android:textSize="18sp"
                         android:textColor="@android:color/primary_text_light"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:visibility="gone"
                         android:id="@+id/info_salinitas"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_toRightOf="@+id/label_salinitas"
-                        android:src="@drawable/ic_info_accent" />
+                        android:src="@drawable/ic_info_accent"
+                        android:visibility="gone" />
                 </RelativeLayout>
 
                 <RadioGroup
@@ -71,23 +74,31 @@
                         android:text="@string/jawaban_salinitas_3" />
                 </RadioGroup>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
                 android:text="Panduan Pengukuran Salinitas"
                 android:textColor="@android:color/primary_text_light"
-                android:textStyle="bold"
                 android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="233dp"
+                android:layout_height="199dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
-                android:layout_centerVertical="true"
-                />
+                android:src="@drawable/ukur_salinitas" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lipsum"
-                />
+                android:text="@string/ukur_salinitas" />
         </LinearLayout>
     </ScrollView>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_salinitas"
         android:layout_width="wrap_content"

@@ -32,7 +32,7 @@
     <string name="deskripsi_iceice">Warna thalus berubah menjadi pucat, sebagian atau seluruh thalus pada beberapa cabang menjadi putih atau membusuk, pertumbuhan lambat.</string>
 
     <string name="sumber">Parenrengi dkk (2012)</string>
-
+    
     <!-- JAWABAN KUALITAS AIR -->
     <string name="jawaban_salinitas_1">Kurang dari 28 ppt</string>
     <string name="jawaban_salinitas_2">28 s/d 32 ppt</string>
@@ -83,17 +83,24 @@
     <string name="saran_kecerahan_1">Pindah lokasi tanam yang memiliki kecerahan di atas 3 m atau hindari substrat dasar yang berlumpur.</string>
     <string name="saran_kecerahan_2">Perhatikan substrat dasar karena mampu menurunkan kecerahan.</string>
 
-    <string name="saran_suhu_1">Turunkan rumput laut sampai kedalaman .... cm (maksimal 60 cm) namun masih dapat ditembus sinar matahari.</string>
+    <string name="saran_suhu_1">Turunkan rumput laut sampai kedalaman maksimal 60 cm, namun masih dapat ditembus sinar matahari.</string>
     <string name="saran_suhu_2">Waspada saat puncak musim panas atau penghujan karena akan menyebabkan suhu lebih tinggi ataupun lebih rendah.</string>
 
-    <string name="saran_kedalaman_1">Penanaman rumput laut dinaikkan sampai/lebih dari ... cm.</string>
+    <string name="saran_kedalaman_1">Penanaman rumput laut dinaikkan sampai/lebih dari 30 cm.</string>
     <string name="saran_kedalaman_2">Jangan sampai rumput laut tidak terkena air saat surut terendah atau cari tempat yang sedikit lebih dalam.</string>
 
     <string name="saran_substratdasarpantai_1">Sering membersihkan rumput laut dari partikel lumpur atau menghindari perairan yang berlumpur.</string>
     <string name="saran_substratdasarpantai_2">Perlu diperhatikan kebersihan dari rumput laut.</string>
 
+    <!-- SARAN HAMA PENYAKIT -->
     <string name="saran_hamapenyakit_000">Optimalkan jumlah bentangan.</string>
     <string name="saran_hamapenyakit_001">Pantau secara rutin, bersihkan gulma.</string>
     <string name="saran_hamapenyakit_011">Intensifkan pemantauan, pindah ke lokasi berarus, tanam jenis bibit tahan penyakit.</string>
     <string name="saran_hamapenyakit_111">Istirahat tanam.</string>
+    
+    <!-- CARA UKUR KUALITAS AIR -->
+    <string name="ukur_kedalaman">1. Memasukkan meteran yang diberi pemberat ke dalam air sampai menyentuh dasar. \n2. Nilai kedalaman diukur berdasarkan panjang meteran yang masuk ke air dan menyentuh dasar.</string>
+    <string name="ukur_salinitas">1. Mengukur salinitas menggunakan alat yang disebut refraktometer. \n2. Mengambil sedikit air dan meneteskannya ke atas refraktometer. \n3. Mengamati salinitas dari lubang kecil pada pangkal refrakrometer.</string>
+    <string name="ukur_kecerahan">1. Mengukur kecerahan menggunakan alat yang disebut sechi disk. \n2. Memasukkan sechi disk ke dalam air sampai warna hitam-putih pada piringan tidak terlihat lagi. \n3. Nilai kecerahan diukur berdasarkan panjang dari piringan sampai batas bekas air yang ada pada tali.</string>
+    <string name="ukur_suhu">1. Mengukur suhu menggunakan alat yang disebut thermometer. \n2. Memasukkan thermometer ke dalam perairan yang ingin diukur. Tunggu 2-3 menit lalu lihat suhu yang terlihat.</string>
 </resources>
