@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
  */
 
 public class UserSettings {
-    public static String SERVER_URL = "http://indratir.hol.es/pekatala/";
+    public static String SERVER_URL = "http://pekatala.hol.es/pekatala/";
     private static UserSettings userSettings;
     public Context context;
     static String KEY = "userLogin";
